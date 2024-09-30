@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Pseduo classes and Pseudo Elements</title>
+        <style>
+            input[type="number"]:out-of-range{
+                border: 2px solid red;
+            }
+            input[type="number"]:in-range{
+                border: 2px solid green;
+            }
+            input[type="email"]:invalid{
+                border: 2px solid red;
+            }
+            input[type="email"]::placeholder{
+                color:blue;
+            }
+            p::first-line{
+                text-decoration:underline;
+            }
+            p::first-letter{
+                font-size: 20px;
+                color: red;
+            }
+            p::before{
+                content: "KLU";
+            }
+            p::after{
+                content: "END";
+            }
+            p::selection{
+                background-color: grey;
+                color:black;
+
+            }
+        </style>
+    </head>
+    <body>
+        <input type="number" placeholder="Enter Age" min=0 max=18 style="width: 500px;">
+        <br><br>
+        <input type="email" placeholder="Enter Email ID">
+        <br><br>
+        <p>
+            Here’s an updated version of all the previous examples that include a main method to demonstrate their functionality with multiple threads. We'll walk through each lock type: synchronized, ReentrantLock, ReadWriteLock, and Semaphore.
+            </p>
+
+    </body>
+</html>
